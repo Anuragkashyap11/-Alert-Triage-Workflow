@@ -1,0 +1,83 @@
+Problem Statement-2
+                    Alert Triage Workflow
+1. Problem Statement
+Security teams receive many alerts from different cloud providers such as AWS, Azure, and GCP. Many of these alerts are noisy, lack context, and require engineers to jump between multiple tools to investigate them. As a result, security engineers spend a lot of time trying to understand whether an alert is actually important and what action they need to take.
+This design aims to create a simple and clear alert triage workflow that helps security engineers quickly understand an alert, investigate its details, and fix the issue from one place.
+
+2. User Persona: Security Engineer
+Role: Mid-level Cloud Security Engineer
+ Goals:
+●Understand if an alert is real or false
+
+●Quickly check the impacted resource
+
+●Take the right action with confidence
+
+Pain Points:
+●Too many alerts, leading to “alert fatigue”
+
+●Lack of context around why the alert happened
+
+●Switching between tools to gather logs, cloud details, and permissions
+
+●Uncertainty about the impact of making a fix
+
+
+Motivations:
+●Reduce investigation time
+
+●Improve accuracy of triage decisions
+
+●Maintain a secure cloud environment
+
+2. Wireframes 
+Cloud Security Alert Workflow Wireframe
+<img width="468" height="312" alt="image" src="https://github.com/user-attachments/assets/e81e3099-e5b0-4fbe-8c90-d10e1fc0b2bb" />
+
+<img width="468" height="312" alt="image" src="https://github.com/user-attachments/assets/3543f91f-5143-4fc1-a751-f6d362f652bd" />
+
+4. Short Write-Up
+Proposed Features
+1.Alert Inbox with Priority Indicators
+ Helps engineers focus on the most critical alerts first. Filtering reduces noise.
+
+2.Detailed Alert View with Context
+ Gives the full picture: what happened, where it happened, and why it matters.
+ This reduces investigation time.
+
+3.Guided Remediation Flow
+ Provides a safe, clear way to review and apply fixes.
+ Engineers gain confidence by seeing the impact before applying changes.
+
+
+Why These Features Were Prioritized
+●High Priority: Alert Details + Context
+ This is the main place where decisions are made. Providing rich context reduces investigation time and false positives.
+
+●Medium Priority: Inbox Filters
+ Helps navigate large volumes of alerts but can be improved over time.
+
+●Medium Priority: Remediation Workflow
+ Important for completing the alert lifecycle but can be built after the context view is solid.
+
+●Lower Priority: Impact Simulation
+ A helpful advanced feature but not essential for minimal viable product.
+
+The focus is on clarity, speed, and reducing mental load for the security engineer.
+
+Success Metrics
+1.Reduction in Time to Triage an Alert
+ Target: 30–50% faster decision-making.
+
+2.Increase in Alerts Investigated and Resolved
+ Higher closure rates show improved usability.
+
+3.Decrease in False Positives Marked by Engineers
+ Better context leads to fewer misjudged alerts.
+
+4.User Satisfaction & Feedback
+ Engineers should report less alert fatigue and greater confidence.
+
+5.Adoption and Usage Data
+ More active users and repeated use indicate that the workflow is effective.
+
